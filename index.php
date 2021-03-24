@@ -10,15 +10,30 @@ and open the template in the editor.
         <title>Blog de videojuegos</title>
     </head>
     <body>
-   <!---- HEADER --->
-   <header>
-       <div id="logo">
-           <a href="index.php">Blog de videojuegos</a>
-       </div>
-   </header>
-   <!---- MENU --->
-   <!---- BARRA LATERAL ---> 
-   <!---- CAJA PRINCIPAL --->
-   <!---- FOOTER --->
+        <!---- HEADER --->
+        <header>
+            <!--- LOGO --->
+            <div id="logo">
+                <a href="index.php">Blog de videojuegos</a>
+            </div>
+            <!---- MENU ---> 
+            <nav>
+                <ul>
+                    <li><a href="index.php"></a>Inicio</li>
+                    <li><a href="">Categoria 1</a></li>
+                    <li><a href="">Categoria 2</a></li>
+                    <li><a href="">Categoria 3</a></li>
+                    <li><a href="">Categoria 4 </a></li>
+                    <li><a href="">Sobre nosotros</a></li>
+                    <li><a href="">Contacto</a></li>
+                </ul>
+
+            </nav>
+        </header>
+
+
+        <!---- BARRA LATERAL ---> 
+        <!---- CAJA PRINCIPAL --->
+        <!---- FOOTER --->
     </body>
 </html>
