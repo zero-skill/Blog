@@ -2,7 +2,7 @@
  Sito hecho con PHP.
  Contiene las siguientes funcionalidades: 
  
- - [ ] Maquetado del sitio
+ - [X] Maquetado del sitio
  - [ ] Estilo del sitio
  - [ ] Registro de usuarios
  - [ ] Autenticación
