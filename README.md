@@ -1,5 +1,5 @@
 # Blog
- Sito hecho con PHP.
+ Sitio hecho con PHP.
  Contiene las siguientes funcionalidades: 
  
  - [X] Maquetado del sitio
