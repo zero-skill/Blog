@@ -69,31 +69,40 @@ and open the template in the editor.
             <div id="principal">
                 <h1>Ultimas entradas</h1>
                 <article class="entrada">
-                    <h2>Titulo de entrada</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque facilisis urna urna, a dignissim lectus rhoncus nec. Pellentesque purus mauris, ultrices hendrerit arcu vitae, eleifend luctus justo. Fusce dictum sem id porta vulputate. Sed tempor est sit amet turpis pellentesque, quis euismod orci posuere. Donec nec enim sit amet risus placerat ultrices. Duis fringilla, turpis et pharetra euismod, eros diam aliquam est, quis ultrices nisl dui nec purus. Nulla metus neque, posuere id consectetur ac, hendrerit quis felis. In nec mauris vel dui fringilla consequat vitae id purus. Nullam ac lacus lobortis, vulputate risus eu, facilisis nisl. Nunc at fermentum ligula. Etiam justo diam, sollicitudin at lorem eu, varius posuere risus. Nam tempus mauris eget turpis dignissim consectetur.
-                    </p>
+                    <a href="">
+                        <h2>Titulo de entrada</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque facilisis urna urna, a dignissim lectus rhoncus nec.
+                        </p>
+                    </a>
                 </article>
                 <article class="entrada">
-                    <h2>Titulo de entrada</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque facilisis urna urna, a dignissim lectus rhoncus nec. Pellentesque purus mauris, ultrices hendrerit arcu vitae, eleifend luctus justo. Fusce dictum sem id porta vulputate. Sed tempor est sit amet turpis pellentesque, quis euismod orci posuere. Donec nec enim sit amet risus placerat ultrices. Duis fringilla, turpis et pharetra euismod, eros diam aliquam est, quis ultrices nisl dui nec purus. Nulla metus neque, posuere id consectetur ac, hendrerit quis felis. In nec mauris vel dui fringilla consequat vitae id purus. Nullam ac lacus lobortis, vulputate risus eu, facilisis nisl. Nunc at fermentum ligula. Etiam justo diam, sollicitudin at lorem eu, varius posuere risus. Nam tempus mauris eget turpis dignissim consectetur.
-                    </p>
+                    <a href="">
+                        <h2>Titulo de entrada</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque facilisis urna urna, a dignissim lectus rhoncus nec.                        </p>
+                    </a>
                 </article>
                 <article class="entrada">
-                    <h2>Titulo de entrada</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque facilisis urna urna, a dignissim lectus rhoncus nec. Pellentesque purus mauris, ultrices hendrerit arcu vitae, eleifend luctus justo. Fusce dictum sem id porta vulputate. Sed tempor est sit amet turpis pellentesque, quis euismod orci posuere. Donec nec enim sit amet risus placerat ultrices. Duis fringilla, turpis et pharetra euismod, eros diam aliquam est, quis ultrices nisl dui nec purus. Nulla metus neque, posuere id consectetur ac, hendrerit quis felis. In nec mauris vel dui fringilla consequat vitae id purus. Nullam ac lacus lobortis, vulputate risus eu, facilisis nisl. Nunc at fermentum ligula. Etiam justo diam, sollicitudin at lorem eu, varius posuere risus. Nam tempus mauris eget turpis dignissim consectetur.
-                    </p>
+                    <a href="">
+                        <h2>Titulo de entrada</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque facilisis urna urna, a dignissim lectus rhoncus nec.                        </p>
+                    </a>
                 </article>
                 <article class="entrada">
-                    <h2>Titulo de entrada</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque facilisis urna urna, a dignissim lectus rhoncus nec. Pellentesque purus mauris, ultrices hendrerit arcu vitae, eleifend luctus justo. Fusce dictum sem id porta vulputate. Sed tempor est sit amet turpis pellentesque, quis euismod orci posuere. Donec nec enim sit amet risus placerat ultrices. Duis fringilla, turpis et pharetra euismod, eros diam aliquam est, quis ultrices nisl dui nec purus. Nulla metus neque, posuere id consectetur ac, hendrerit quis felis. In nec mauris vel dui fringilla consequat vitae id purus. Nullam ac lacus lobortis, vulputate risus eu, facilisis nisl. Nunc at fermentum ligula. Etiam justo diam, sollicitudin at lorem eu, varius posuere risus. Nam tempus mauris eget turpis dignissim consectetur.
-                    </p>
+                    <a href="">
+                        <h2>Titulo de entrada</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque facilisis urna urna, a dignissim lectus rhoncus nec.                        </p>
+                    </a>
                 </article>
+                <div class="ver-todas">
+                    <a href="">Ver todas las entradas</a>
+                </div>
             </div>
 
+            <div class="clearfix"></div>
         </div>
 
         <!---- FOOTER --->
