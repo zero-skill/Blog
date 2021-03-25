@@ -20,7 +20,7 @@ and open the template in the editor.
             <!---- MENU ---> 
             <nav id="nav">
                 <ul>
-                    <li><a href="index.php"></a>Inicio</li>
+                    <li><a href="index.php">Inicio</a></li>
                     <li><a href="">Categoria 1</a></li>
                     <li><a href="">Categoria 2</a></li>
                     <li><a href="">Categoria 3</a></li>
@@ -29,6 +29,7 @@ and open the template in the editor.
                     <li><a href="">Contacto</a></li>
                 </ul>
             </nav>
+            <div class="clearfix"></div>
         </header>
 
         <div id="container">
