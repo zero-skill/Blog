@@ -7,11 +7,12 @@ and open the template in the editor.
 <html lang="es">
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
         <title>Blog de videojuegos</title>
     </head>
     <body>
         <!---- HEADER --->
-        <header>
+        <header id="header">
             <!--- LOGO --->
             <div id="logo">
                 <a href="index.php">Blog de videojuegos</a>
