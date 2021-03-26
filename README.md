@@ -6,7 +6,7 @@
  - [X] Estilo del sitio
  - [X] Conexión con base de datos MySQL
  - [X] Registro de usuarios
- - [ ] Autenticación
+ - [X] Autenticación
  - [ ] Creación entradas y categorias
  - [ ] Listado de entradas
  - [ ] Edición de entradas
