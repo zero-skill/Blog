@@ -13,7 +13,6 @@ and open the template in the editor.
     </head>
     <body>
         <?php require_once 'includes/header.php'; ?>
-
         <?php require_once 'includes/sidebar.php'; ?>
         <!---- CAJA PRINCIPAL --->     
         <div id="principal">
@@ -51,9 +50,6 @@ and open the template in the editor.
                 <a href="">Ver todas las entradas</a>
             </div>
         </div>
-
-
-
         <?php require_once 'includes/footer.php'; ?>
     </body>
 </html>

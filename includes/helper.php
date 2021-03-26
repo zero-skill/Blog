@@ -23,3 +23,13 @@ function borrarError() {
     
     return $deleted;
 }
+
+function obtenerCategorias($db){
+    $sql="SELECT * FROM CATEGORIAS ORDER BY NOMBRE ASC";
+    $categorias = mysqli_query($db, $sql);
+    $result = array();
+    if ($categorias && mysqli_num_rows($categorias)>=1){
+        $result=$categorias;
+    }
+    return $result;
+}
