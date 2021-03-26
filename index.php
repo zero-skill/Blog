@@ -13,42 +13,10 @@ and open the template in the editor.
     </head>
     <body>
         <?php require_once 'includes/header.php'; ?>
-        <?php require_once 'includes/sidebar.php'; ?>
-        <!---- CAJA PRINCIPAL --->     
-        <div id="principal">
-            <h1>Ultimas entradas</h1>
-            <article class="entrada">
-                <a href="">
-                    <h2>Titulo de entrada</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque facilisis urna urna, a dignissim lectus rhoncus nec.
-                    </p>
-                </a>
-            </article>
-            <article class="entrada">
-                <a href="">
-                    <h2>Titulo de entrada</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque facilisis urna urna, a dignissim lectus rhoncus nec.                        </p>
-                </a>
-            </article>
-            <article class="entrada">
-                <a href="">
-                    <h2>Titulo de entrada</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque facilisis urna urna, a dignissim lectus rhoncus nec.                        </p>
-                </a>
-            </article>
-            <article class="entrada">
-                <a href="">
-                    <h2>Titulo de entrada</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque facilisis urna urna, a dignissim lectus rhoncus nec.                        </p>
-                </a>
-            </article>
-            <div class="ver-todas">
-                <a href="">Ver todas las entradas</a>
-            </div>
+        <div id="container">
+            <?php require_once 'includes/sidebar.php'; ?>
+            <?php require_once './includes/principal.php';?>
+            
         </div>
         <?php require_once 'includes/footer.php'; ?>
     </body>

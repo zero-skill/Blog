@@ -1,5 +1,4 @@
-<div class="clearfix"></div>
-</div>
+
 <!---- FOOTER --->
 <footer id="footer">
     <p>
