@@ -5,7 +5,7 @@
  - [X] Maquetado del sitio
  - [X] Estilo del sitio
  - [X] Conexión con base de datos MySQL
- - [ ] Registro de usuarios
+ - [X] Registro de usuarios
  - [ ] Autenticación
  - [ ] Creación entradas y categorias
  - [ ] Listado de entradas
