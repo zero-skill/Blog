@@ -4,13 +4,13 @@
     <?php
     $entradas = obtenerUltimasEntradas($db);
     if (!empty($entradas)):
-        while ($entrada = mysqli_fetch_assoc($entradas)):
-            ?>        
+        while ($entrada = mysqli_fetch_assoc($entradas)): ?>        
             <article class="entrada">
                 <a href="">
-                    <h2><?=$entrada['TITULO']?></h2>
+                    <h2><?= $entrada['TITULO'] ?></h2>
+                    <span class="entrada-fecha"><?= $entrada['CATEGORIA'] . ' | ' . $entrada['FECHA'] ?></span>
                     <p>
-                        <?= substr($entrada['DESCRIPCION'], 0,265).' ...'?>
+                        <?= substr($entrada['DESCRIPCION'], 0, 265) . ' ...' ?>
                     </p>
                 </a>
             </article>

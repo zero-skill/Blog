@@ -213,6 +213,11 @@ input[type="button"],
     margin: 0px auto;
     margin-top: 40px;
 }
+.entrada-fecha{
+    color: #4e4e4e;
+    margin-top: 5px;
+    font-size: 15px;
+}
 /*FOOTER*/
 #footer{
     width: 85%;
