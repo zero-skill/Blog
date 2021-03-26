@@ -35,11 +35,12 @@ function obtenerCategorias($db) {
 }
 
 function obtenerUltimasEntradas($db) {
-    $sql = "SELECT E.*,C.* FROM ENTRADAS E"
+    $sqlito="SELECT * FROM ENTRADAS";
+    $sql = "SELECT E.*, C.* FROM ENTRADAS E "
             . "INNER JOIN CATEGORIAS C ON E.CATEGORIA_ID = C.ID "
             . "ORDER BY E.ID DESC LIMIT 4";
     $entradas = mysqli_query($db, $sql);
-    $result = false;
+    $result = array();
     if ($entradas && mysqli_num_rows($entradas) >= 1) {
         $result = $entradas;
     }
