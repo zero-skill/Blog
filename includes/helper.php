@@ -20,16 +20,28 @@ function borrarError() {
         unset($_SESSION['error']);
         $deleted = true;
     }
-    
+
     return $deleted;
 }
 
-function obtenerCategorias($db){
-    $sql="SELECT * FROM CATEGORIAS ORDER BY NOMBRE ASC";
+function obtenerCategorias($db) {
+    $sql = "SELECT * FROM CATEGORIAS ORDER BY NOMBRE ASC";
     $categorias = mysqli_query($db, $sql);
     $result = array();
-    if ($categorias && mysqli_num_rows($categorias)>=1){
-        $result=$categorias;
+    if ($categorias && mysqli_num_rows($categorias) >= 1) {
+        $result = $categorias;
+    }
+    return $result;
+}
+
+function obtenerUltimasEntradas($db) {
+    $sql = "SELECT E.*,C.* FROM ENTRADAS E"
+            . "INNER JOIN CATEGORIAS C ON E.CATEGORIA_ID = C.ID "
+            . "ORDER BY E.ID DESC LIMIT 4";
+    $entradas = mysqli_query($db, $sql);
+    $result = false;
+    if ($entradas && mysqli_num_rows($entradas) >= 1) {
+        $result = $entradas;
     }
     return $result;
 }

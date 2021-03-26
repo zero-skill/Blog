@@ -11,16 +11,16 @@
     <nav id="nav">
         <ul>
             <li><a href="index.php">Inicio</a></li>
-            <?php $categorias = obtenerCategorias($db); ?>
-            <?php while ($categoria = mysqli_fetch_assoc($categorias)): ?>
-
+            <?php
+            $categorias = obtenerCategorias($db);
+            if (!empty($categorias)):
+            while ($categoria = mysqli_fetch_assoc($categorias)):?>
                 <li><a href="categoria.php?id=<?= $categoria['ID'] ?>" ><?= $categoria['NOMBRE'] ?></a></li>
-
-            <?php endwhile; ?>
+            <?php endwhile;
+            endif;?>
             <li><a href="">Sobre nosotros</a></li>
             <li><a href="">Contacto</a></li>
         </ul>
     </nav>
     <div class="clearfix"></div>
 </header>
-<div id="container">
