@@ -10,11 +10,12 @@
             <a href="logout.php" class="boton boton-rojo">Cerrar sesión</a>
         </div>
     <?php endif; ?>
+    <?php if (!isset($_SESSION['usuario'])): ?>
     <div id="login" class="block-aside">
         <h3>Inicia Sesión</h3>
         <?php if (isset($_SESSION['error_login'])): ?>
             <div  class="alerta alerta-error">
-               <?= $_SESSION['error_login']; ?>
+                <?= $_SESSION['error_login']; ?>
             </div>
         <?php endif; ?>
         <form action="login.php" method="post">
@@ -59,4 +60,5 @@
         </form>
         <?php borrarError() ?>
     </div>
+    <?php endif;?>
 </aside>
