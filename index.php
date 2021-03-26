@@ -1,4 +1,3 @@
-<?php require_once 'includes/header.php'; ?>
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -9,11 +8,11 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+        <link rel='icon' href='assets/img/favicon.ico' type='image/x-icon'/>
         <title>Blog de videojuegos</title>
     </head>
     <body>
-
-
+        <?php require_once 'includes/header.php'; ?>
 
         <?php require_once 'includes/sidebar.php'; ?>
         <!---- CAJA PRINCIPAL --->     
