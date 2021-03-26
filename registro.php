@@ -2,12 +2,14 @@
 
 if (isset($_POST)) {
     require_once './includes/conexion.php';
-    session_start();
+    if (!isset($_SESSION)) {
+        session_start();
+    }
     //RECOGER DATOS DEL FORM REGISTRO
-    $nombre = isset($_POST['nombre']) ? $_POST['nombre'] : false;
-    $apellidos = isset($_POST['apellidos']) ? $_POST['apellidos'] : false;
-    $email = isset($_POST['email']) ? $_POST['email'] : false;
-    $password = isset($_POST['password']) ? $_POST['password'] : false;
+    $nombre = isset($_POST['nombre']) ? mysqli_real_escape_string($db, $_POST['nombre']) : false;
+    $apellidos = isset($_POST['apellidos']) ? mysqli_real_escape_string($db, $_POST['apellidos']) : false;
+    $email = isset($_POST['email']) ? mysqli_real_escape_string($db, $_POST['email']) : false;
+    $password = isset($_POST['password']) ? mysqli_real_escape_string($db, $_POST['password']) : false;
 
     //ARRAY DE ERRORES
     $error = array();
@@ -53,7 +55,7 @@ if (isset($_POST)) {
         if ($query) {
             $_SESSION['registro_completado'] = "El registro se ha completado con exito";
         } else {
-            $_SESSION['error']['general'] = "Fallo al guardar el usuario. ". mysqli_error($db);
+            $_SESSION['error']['general'] = "Fallo al guardar el usuario. " . mysqli_error($db);
         }
     } else {
         //CREA UNA SESION
