@@ -10,9 +10,9 @@ function mostrarError($error, $campo) {
 
 function borrarError() {
     $deleted = false;
-    if (isset($_SESSION['completado'])) {
-        $_SESSION['completado'] = null;
-        unset($_SESSION['completado']);
+    if (isset($_SESSION['registro_completado'])) {
+        $_SESSION['registro_completado'] = null;
+        unset($_SESSION['registro_completado']);
         $deleted = true;
     }
     if (isset($_SESSION['error'])) {

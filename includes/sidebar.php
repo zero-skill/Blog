@@ -1,8 +1,18 @@
 <?php include_once 'includes/helper.php'; ?>
 <!---- BARRA LATERAL ---> 
 <aside id="sidebar">
+    <?php if (isset($_SESSION['usuario'])): ?>
+        <div id="usuario-logueado" class="block-aside">
+            <h3>Bienvenido, <?= $_SESSION['usuario']['NOMBRE'] . ' ' . $_SESSION['usuario']['APELLIDOS'] ?></h3>
+        </div>
+    <?php endif; ?>
     <div id="login" class="block-aside">
         <h3>Inicia Sesión</h3>
+        <?php if (isset($_SESSION['error_login'])): ?>
+            <div  class="alerta alerta-error">
+               <?= $_SESSION['error_login']; ?>
+            </div>
+        <?php endif; ?>
         <form action="login.php" method="post">
             <label for="email">Email</label>
             <input type="email" id="email" name="email">
@@ -20,9 +30,9 @@
             <div class="alerta alerta-exito">
                 <?= $_SESSION['registro_completado']; ?>
             </div>
-        <?php elseif(isset($_SESSION['error']['general'])): ?>
+        <?php elseif (isset($_SESSION['error']['general'])): ?>
             <div class="alerta alerta-error">
-                <?= $_SESSION['error']['general'] ;?>
+                <?= $_SESSION['error']['general']; ?>
             </div>
         <?php endif; ?>
         <form action="registro.php" method="post">
