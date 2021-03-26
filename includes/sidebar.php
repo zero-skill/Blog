@@ -18,11 +18,11 @@
         <!--- MOSTRAR ERRORES --->
         <?php if (isset($_SESSION['registro_completado'])): ?>
             <div class="alerta alerta-exito">
-                <?= $_SESSION['registro_completado'] ?>
+                <?= $_SESSION['registro_completado']; ?>
             </div>
         <?php elseif(isset($_SESSION['error']['general'])): ?>
             <div class="alerta alerta-error">
-                <?= $_SESSION['error']['general'] ?>
+                <?= $_SESSION['error']['general'] ;?>
             </div>
         <?php endif; ?>
         <form action="registro.php" method="post">
