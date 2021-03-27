@@ -7,8 +7,10 @@
  - [X] Conexión con base de datos MySQL
  - [X] Registro de usuarios
  - [X] Autenticación
- - [ ] Creación entradas y categorias
- - [ ] Listado de entradas
+ - [X] Creación entradas y categorias
+ - [X] Listado de entradas
+ - [X] Listado de categorias
  - [ ] Edición de entradas
+ - [ ] Edición de datos de usuario
  - [ ] Borrado de entradas
  - [ ] Buscador en PHP
