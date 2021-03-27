@@ -11,7 +11,7 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
         <link rel='icon' href='assets/img/favicon.ico' type='image/x-icon'/>
-        <title>Blog de videojuegos</title>
+        <title>Blog</title>
     </head>
     <body>
         <!---- HEADER --->

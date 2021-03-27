@@ -7,7 +7,7 @@
     if (!empty($entradas)):
         while ($entrada = mysqli_fetch_assoc($entradas)): ?>        
             <article class="entrada">
-                <a href="">
+                <a href="entrada-completa.php?id=<?=$entrada['ID']?>">
                     <h2><?= $entrada['TITULO'] ?></h2>
                     <span class="entrada-fecha"><?= $entrada['CATEGORIA'] . ' | ' . $entrada['FECHA'] ?></span>
                     <p>

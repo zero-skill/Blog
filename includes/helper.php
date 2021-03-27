@@ -89,3 +89,14 @@ function obtenerEntradas($db, $limit = null, $categoria = null) {
     }
     return $result;
 }
+function obtenerEntrada($db,$id){
+    $sql="SELECT E.*, C.NOMBRE AS CATEGORIA FROM ENTRADAS E"
+            . " INNER JOIN CATEGORIAS C ON E.CATEGORIA_ID = C.ID"
+            . " WHERE E.ID = $id";
+    $entrada=mysqli_query($db, $sql);
+    $result=array();
+    if ($entrada && mysqli_num_rows($entrada)>=1){
+        $result= mysqli_fetch_assoc($entrada);
+    }
+    return $result;
+}
