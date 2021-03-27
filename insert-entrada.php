@@ -26,7 +26,8 @@ if (count($error)==0){
     $insert_entrada=true;
     $sql="INSERT INTO ENTRADAS VALUES(NULL,$usuario,$categoria,'$titulo','$descripcion',CURDATE());";
     $query= mysqli_query($db, $sql);
+    header("Location: index.php");
 }else{
     $_SESSION['error-entrada']=$error;
+    header("Location: crear-entrada.php");
 }
-header("Location: index.php");

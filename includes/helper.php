@@ -20,7 +20,11 @@ function borrarError() {
         unset($_SESSION['error']);
         $deleted = true;
     }
-
+    if (isset($_SESSION['error-entrada'])) {
+        $_SESSION['error-entrada'] = null;
+        unset($_SESSION['error-entrada']);
+        $deleted = true;
+    }
     return $deleted;
 }
 
