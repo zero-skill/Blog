@@ -15,6 +15,11 @@ function borrarError() {
         unset($_SESSION['registro_completado']);
         $deleted = true;
     }
+    if (isset($_SESSION['update_usuario_completado'])){
+        $_SESSION['update_usuario_completado']=null;
+        unset($_SESSION['update_usuario_completado']);
+        $deleted=true;
+    }
     if (isset($_SESSION['error'])) {
         $_SESSION['error'] = null;
         unset($_SESSION['error']);
