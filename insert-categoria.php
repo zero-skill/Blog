@@ -21,5 +21,7 @@ if (count($error) == 0) {
     $insert_categoria = true;
     $sql = "INSERT INTO CATEGORIAS VALUES(NULL,'$nombre');";
     $query= mysqli_query($db, $sql);
+}else{
+    $_SESSION['error-categoria']=$error;
 }
 header("Location: index.php");

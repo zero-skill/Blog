@@ -4,7 +4,7 @@
         <div id="usuario-logueado" class="block-aside">
             <h3>Bienvenido, <?= $_SESSION['usuario']['NOMBRE'] . ' ' . $_SESSION['usuario']['APELLIDOS'] ?></h3>
             <!--- BOTONES --->
-            <a href="logout.php" class="boton boton-verde">Crear entradas</a>
+            <a href="crear-entrada.php" class="boton boton-verde">Crear entradas</a>
             <a href="crear-categoria.php" class="boton">Crear categoría</a>
             <a href="logout.php" class="boton boton-naranja">Mis datos</a>
             <a href="logout.php" class="boton boton-rojo">Cerrar sesión</a>
