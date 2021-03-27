@@ -1,8 +1,9 @@
-<!---- CAJA PRINCIPAL --->     
+<?php require_once 'includes/header.php'; ?>
+<?php require_once 'includes/sidebar.php'; ?>
 <div id="principal">
-    <h1>Ultimas entradas</h1>
+    <h1>Todas las entradas</h1>
     <?php
-    $entradas = obtenerEntradas($db);
+    $entradas = obtenerEntradas($db,TRUE);
     if (!empty($entradas)):
         while ($entrada = mysqli_fetch_assoc($entradas)): ?>        
             <article class="entrada">
@@ -19,9 +20,7 @@
     endif;
     ?>
 
-
-    <div class="ver-todas">
-        <a href="entradas.php">Ver todas las entradas</a>
-    </div>
 </div>
 <div class="clearfix"></div>
+<?php require_once 'includes/footer.php'; ?>
+
