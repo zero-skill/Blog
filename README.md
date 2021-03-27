@@ -6,11 +6,12 @@
  - [X] Estilo del sitio
  - [X] Conexión con base de datos MySQL
  - [X] Registro de usuarios
- - [X] Autenticación
- - [X] Creación entradas y categorias
+ - [X] Sesiones de usuario
+ - [X] Creación entradas 
+ - [X] Creación categorias
  - [X] Listado de entradas
  - [X] Listado de categorias
- - [ ] Edición de entradas
- - [ ] Edición de datos de usuario
+ - [X] Editar datos del usuario
+ - [ ] Editar entradas
  - [ ] Borrado de entradas
  - [ ] Buscador en PHP
