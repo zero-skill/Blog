@@ -25,6 +25,11 @@ function borrarError() {
         unset($_SESSION['error-entrada']);
         $deleted = true;
     }
+    if (isset($_SESSION['error-categoria'])) {
+        $_SESSION['error-categoria'] = null;
+        unset($_SESSION['error-categoria']);
+        $deleted = true;
+    }
     return $deleted;
 }
 

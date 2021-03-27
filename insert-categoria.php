@@ -13,7 +13,7 @@ if (!empty($nombre) && !is_numeric($nombre) && !preg_match("/[0-9]/", $nombre)) 
     $nombre_validate = true;
 } else {
     $nombre_validate = false;
-    $error['nombre'] = 'el nombre no es valido';
+    $error['nombre'] = 'El nombre no es valido';
 }
 
 $insert_categoria = false;
@@ -21,7 +21,8 @@ if (count($error) == 0) {
     $insert_categoria = true;
     $sql = "INSERT INTO CATEGORIAS VALUES(NULL,'$nombre');";
     $query= mysqli_query($db, $sql);
+    header("Location: index.php");
 }else{
     $_SESSION['error-categoria']=$error;
+    header("Location: crear-categoria.php");
 }
-header("Location: index.php");
