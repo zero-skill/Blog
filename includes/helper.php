@@ -90,8 +90,9 @@ function obtenerEntradas($db, $limit = null, $categoria = null) {
     return $result;
 }
 function obtenerEntrada($db,$id){
-    $sql="SELECT E.*, C.NOMBRE AS CATEGORIA FROM ENTRADAS E"
+    $sql="SELECT E.*, C.NOMBRE AS CATEGORIA, CONCAT(U.NOMBRE,' ',U.APELLIDOS) AS 'USUARIO' FROM ENTRADAS E"
             . " INNER JOIN CATEGORIAS C ON E.CATEGORIA_ID = C.ID"
+            . " INNER JOIN USUARIOS U ON E.USUARIO_ID = U.ID"
             . " WHERE E.ID = $id";
     $entrada=mysqli_query($db, $sql);
     $result=array();
