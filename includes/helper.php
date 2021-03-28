@@ -70,10 +70,12 @@ function obtenerUltimasEntradas($db) {
     return $result;
 }
 
-function obtenerEntradas($db, $limit = null, $categoria = null) {
+function obtenerEntradas($db, $limit = null, $categoria = null,$busqueda=null) {
     $sql = "SELECT E.*, C.NOMBRE AS CATEGORIA FROM ENTRADAS E "
             . "INNER JOIN CATEGORIAS C ON E.CATEGORIA_ID = C.ID";
-
+    if (!empty($busqueda)) {
+        $sql .= " WHERE E.TITULO LIKE '%$busqueda%' OR E.DESCRIPCION LIKE '%$busqueda%'";
+    }
     if (!empty($categoria)) {
         $sql .= " WHERE E.CATEGORIA_ID=$categoria";
     }
