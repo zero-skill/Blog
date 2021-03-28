@@ -12,6 +12,6 @@
  - [X] Listado de entradas
  - [X] Listado de categorias
  - [X] Editar datos del usuario
- - [ ] Editar entradas
- - [ ] Borrado de entradas
- - [ ] Buscador en PHP
+ - [X] Editar entradas
+ - [X] Borrado de entradas
+ - [X] Buscador en PHP
