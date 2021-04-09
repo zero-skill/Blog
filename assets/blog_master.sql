@@ -26,21 +26,21 @@ USE `blog_master`;
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `categorias`
+-- Estructura de tabla para la tabla `CATEGORIAS`
 --
 
-DROP TABLE IF EXISTS `categorias`;
-CREATE TABLE IF NOT EXISTS `categorias` (
+DROP TABLE IF EXISTS `CATEGORIAS`;
+CREATE TABLE IF NOT EXISTS `CATEGORIAS` (
   `ID` int(255) NOT NULL AUTO_INCREMENT,
   `NOMBRE` varchar(100) NOT NULL,
   PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
 
 --
--- Volcado de datos para la tabla `categorias`
+-- Volcado de datos para la tabla `CATEGORIAS`
 --
 
-INSERT INTO `categorias` (`ID`, `NOMBRE`) VALUES
+INSERT INTO `CATEGORIAS` (`ID`, `NOMBRE`) VALUES
 (1, 'Categoria I'),
 (2, 'Categoria II'),
 (3, 'Categoria III'),
@@ -53,11 +53,11 @@ INSERT INTO `categorias` (`ID`, `NOMBRE`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `entradas`
+-- Estructura de tabla para la tabla `ENTRADAS`
 --
 
-DROP TABLE IF EXISTS `entradas`;
-CREATE TABLE IF NOT EXISTS `entradas` (
+DROP TABLE IF EXISTS `ENTRADAS`;
+CREATE TABLE IF NOT EXISTS `ENTRADAS` (
   `ID` int(255) NOT NULL AUTO_INCREMENT,
   `USUARIO_ID` int(255) NOT NULL,
   `CATEGORIA_ID` int(255) NOT NULL,
@@ -70,10 +70,10 @@ CREATE TABLE IF NOT EXISTS `entradas` (
 ) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=latin1;
 
 --
--- Volcado de datos para la tabla `entradas`
+-- Volcado de datos para la tabla `ENTRADAS`
 --
 
-INSERT INTO `entradas` (`ID`, `USUARIO_ID`, `CATEGORIA_ID`, `TITULO`, `DESCRIPCION`, `FECHA`) VALUES
+INSERT INTO `ENTRADAS` (`ID`, `USUARIO_ID`, `CATEGORIA_ID`, `TITULO`, `DESCRIPCION`, `FECHA`) VALUES
 (1, 1, 1, 'GTA V', 'JUEGO SANDBOX TRIPLE A', '2021-03-19'),
 (2, 1, 2, 'WOW', 'JUEGO PARA FRIKIS', '2021-03-19'),
 (3, 1, 3, 'FIFA 21', 'JUEGO DE FUTBOL HIPERREALISTA', '2021-03-19'),
@@ -89,11 +89,11 @@ INSERT INTO `entradas` (`ID`, `USUARIO_ID`, `CATEGORIA_ID`, `TITULO`, `DESCRIPCI
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `usuarios`
+-- Estructura de tabla para la tabla `USUARIOS`
 --
 
-DROP TABLE IF EXISTS `usuarios`;
-CREATE TABLE IF NOT EXISTS `usuarios` (
+DROP TABLE IF EXISTS `USUARIOS`;
+CREATE TABLE IF NOT EXISTS `USUARIOS` (
   `ID` int(255) NOT NULL AUTO_INCREMENT,
   `NOMBRE` varchar(100) DEFAULT NULL,
   `APELLIDOS` varchar(100) DEFAULT NULL,
@@ -105,17 +105,17 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
 ) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=latin1;
 
 --
--- Volcado de datos para la tabla `usuarios`
+-- Volcado de datos para la tabla `USUARIOS`
 --
 
-INSERT INTO `usuarios` (`ID`, `NOMBRE`, `APELLIDOS`, `EMAIL`, `PASSWORD`, `FECHA_REGISTRO`) VALUES
+INSERT INTO `USUARIOS` (`ID`, `NOMBRE`, `APELLIDOS`, `EMAIL`, `PASSWORD`, `FECHA_REGISTRO`) VALUES
 (1, 'GABRIEL', 'AMAYA', 'GABRIEL.AMAYA@MAIL.COM', '1234', '2021-03-18'),
 (3, 'JUAN', 'PINTO', 'JUAN.PINTO@MAIL.COM', '1234', '2021-03-15'),
 (4, 'DANIEL', 'PEREZ', 'DANIEL.PEREZ@MAIL.COM', '1234', '2021-03-10'),
 (6, 'MARIA', 'ACEVEDO', 'MACEVEDO@MAIL.COM', 'ASDFAGJH', '2020-11-18'),
 (7, 'gabriel', 'amaya', 'gabbriel.amaya@gmail.com', '$2y$04$VauXS2EjYw6HE115/JAGrefVM1CDg1QENHSGAjP8qqY.tayvEgMeW', '2021-03-26'),
 (9, 'testing', 'rwrafas', 'gabob670@gmail.com', '$2y$04$XA84iADQc1o/yS1hoUIwL.4woKdG3pEkcZ0cEkFhZ36FcM1nE4nlO', '2021-03-26'),
-(10, 'asfaf\'', 'asfasf\"', 'mail@mail.com', '$2y$04$oj4Rf4QYvSA178AgowyDlO4AAlbfBzMf8N3xrtiWxY7o3cbdnUC2y', '2021-03-26'),
+(10, 'asfaf\', 'asfasf\', 'mail@mail.com', '$2y$04$oj4Rf4QYvSA178AgowyDlO4AAlbfBzMf8N3xrtiWxY7o3cbdnUC2y', '2021-03-26'),
 (11, 'gabriel', 'amaya', 'angelita142009@gmail.com', '$2y$04$s.9X6/4TLFORcoHUYDIWaOqRn4AnIcllFgS/TjRolt2WSMoNfpLbe', '2021-03-26'),
 (13, 'testing', 'rwrafas', 'mail1@mail.com', '$2y$04$am.gD9nP9KnQS9nuolFPneWUQTljA/LyEUIfbzolcM93Ovh99A2de', '2021-03-26'),
 (14, 'afaf', 'afsasf', 'asfasf@gank.cl', '$2y$04$vEw/7uBjo0bBQO24Rv4Rz.3.1m7To.Vpn2n2XSVDN61.o0TQn5BJ2', '2021-03-26'),
@@ -130,11 +130,11 @@ INSERT INTO `usuarios` (`ID`, `NOMBRE`, `APELLIDOS`, `EMAIL`, `PASSWORD`, `FECHA
 --
 
 --
--- Filtros para la tabla `entradas`
+-- Filtros para la tabla `ENTRADAS`
 --
-ALTER TABLE `entradas`
-  ADD CONSTRAINT `FK_ENTRADAS_CATEGORIA` FOREIGN KEY (`CATEGORIA_ID`) REFERENCES `categorias` (`ID`),
-  ADD CONSTRAINT `FK_ENTRADAS_USUARIO` FOREIGN KEY (`USUARIO_ID`) REFERENCES `usuarios` (`ID`);
+ALTER TABLE `ENTRADAS`
+  ADD CONSTRAINT `FK_ENTRADAS_CATEGORIA` FOREIGN KEY (`CATEGORIA_ID`) REFERENCES `CATEGORIAS` (`ID`),
+  ADD CONSTRAINT `FK_ENTRADAS_USUARIO` FOREIGN KEY (`USUARIO_ID`) REFERENCES `USUARIOS` (`ID`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
