@@ -115,7 +115,7 @@ INSERT INTO `USUARIOS` (`ID`, `NOMBRE`, `APELLIDOS`, `EMAIL`, `PASSWORD`, `FECHA
 (6, 'MARIA', 'ACEVEDO', 'MACEVEDO@MAIL.COM', 'ASDFAGJH', '2020-11-18'),
 (7, 'gabriel', 'amaya', 'gabbriel.amaya@gmail.com', '$2y$04$VauXS2EjYw6HE115/JAGrefVM1CDg1QENHSGAjP8qqY.tayvEgMeW', '2021-03-26'),
 (9, 'testing', 'rwrafas', 'gabob670@gmail.com', '$2y$04$XA84iADQc1o/yS1hoUIwL.4woKdG3pEkcZ0cEkFhZ36FcM1nE4nlO', '2021-03-26'),
-(10, 'asfaf\', 'asfasf\', 'mail@mail.com', '$2y$04$oj4Rf4QYvSA178AgowyDlO4AAlbfBzMf8N3xrtiWxY7o3cbdnUC2y', '2021-03-26'),
+(10, 'asfaf', 'asfasf', 'mail@mail.com', '$2y$04$oj4Rf4QYvSA178AgowyDlO4AAlbfBzMf8N3xrtiWxY7o3cbdnUC2y', '2021-03-26'),
 (11, 'gabriel', 'amaya', 'angelita142009@gmail.com', '$2y$04$s.9X6/4TLFORcoHUYDIWaOqRn4AnIcllFgS/TjRolt2WSMoNfpLbe', '2021-03-26'),
 (13, 'testing', 'rwrafas', 'mail1@mail.com', '$2y$04$am.gD9nP9KnQS9nuolFPneWUQTljA/LyEUIfbzolcM93Ovh99A2de', '2021-03-26'),
 (14, 'afaf', 'afsasf', 'asfasf@gank.cl', '$2y$04$vEw/7uBjo0bBQO24Rv4Rz.3.1m7To.Vpn2n2XSVDN61.o0TQn5BJ2', '2021-03-26'),
